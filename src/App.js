@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ImageViewer from './components/ImageViewer';
 
 function App() {
+  const imageUrl = '/images/nordstadt.jpg';
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>GeoGuessr</h1>
+      <ImageViewer imageUrl={imageUrl} />
     </div>
   );
 }
